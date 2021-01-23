@@ -1,5 +1,7 @@
 # Requirements
 #### ** You should have Python 3.X installed on your machine
+#### ** The code was not configured for big data files since there is a [free limit for Open Weather Map API calls](https://openweathermap.org/price)
+#### ** Google's Elevation API are [not free](https://developers.google.com/maps/documentation/elevation/usage-and-billing#pricing-for-product). That is why I commented out the elvation function call. If you want to use it, you have to uncomment `line 18` on `get_weather_data.py`.
 #### ** The input csv file should contain columns of `x` and `y` in lowercase and/or other columns
 #### ** Make sure columns of `x` and `y` have proper WGS84 longitudes and latitudes values
 #### ** The code will not work and raise an error if any of the conditions with columns of `x` and `y` are not met
@@ -22,7 +24,7 @@
   * Update pip by typing `pip install --upgrade pip`
   * Install the packges inside the virtual environment by typing `pip install -r requirements.txt`
 
-4) Now the environment is ready and you can run the code. To do so, type in:
+4) The entry file is `get_weather_data.py` which imports `funcs.py`. You can run the code as:
   * `python3 get_weather_data.py {input-coords-csv-file} {results-csv-file}`
   * As an example, you can use the sample csv file  `./input/coords.csv` and an output as `./output/results.csv`:
     * `python3 get_weather_data.py ./input/coords.csv ./output/results.csv`
