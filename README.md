@@ -9,12 +9,12 @@
 # How to use the code?
 
 1) In order for this code to work, you need to get two API keys from:
-  * [Open Weather Map API](https://home.openweathermap.org/users/sign_up)
-  * [Google Elevation API](https://developers.google.com/maps/documentation/elevation/get-api-key)
+  * [Open Weather Map API](https://home.openweathermap.org/users/sign_up) (required)
+  * [Google Elevation API](https://developers.google.com/maps/documentation/elevation/get-api-key) (optional)
   
 2) Then create two enviroment variables in your operating system with the API keys you got from `Open Weather Map` and `Google`:
-  * OWM_API_KEY='xxxxxxxxx'
-  * GOOG_API_KEY='xxxxxxxxx'
+  * OWM_API_KEY='xxxxxxxxx' (free to use certain limit)
+  * GOOG_API_KEY='xxxxxxxxx' (not free to use, please refer to the links above) 
  
 3) Once you have the API keys ready on your operating system, you need to create a virtual environment to install the required packages. This example is for macos:
   * Download the files and folder from the repo
