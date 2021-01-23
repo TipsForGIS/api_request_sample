@@ -15,7 +15,7 @@ else:
 
             coords_df = funcs.update_df_temp(coords_df)
             coords_df = funcs.update_df_polt(coords_df)
-            coords_df = funcs.update_df_elev(coords_df)
+            #coords_df = funcs.update_df_elev(coords_df)
             
             coords_df.to_csv(output_file, index=False)
             
